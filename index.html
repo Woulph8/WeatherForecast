@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Weather Forecast Europe</h1>
+    <div id="weather-city-selection">
+        <select id="city-select">
+            <option>Loading cities...</option>
+        </select>
+    </div>
+
+    <div id="weather-forecast">
+        <div id="forecast-container">
+            <!-- Forecast data will be rendered here by JS -->
+        </div>
+    </div>
+    <script src="js/populate_cities.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- https://www.7timer.info/bin/api.pl?lon=(longitude)&lat=(latitude)&product=civillight&output=json -->

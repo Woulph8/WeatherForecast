@@ -31,6 +31,7 @@ fetch('city_coordinates.csv')
 // Helper to get selected city data
 function getSelectedCityData() {
   const select = document.getElementById('city-select');
+  if (select.selectedIndex === 0) return null;
   const idx = select.value;
   return citiesData[idx];
 }

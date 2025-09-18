@@ -1,5 +1,5 @@
 latitude,longitude,city,country,data_source
-00.00,00.00,Select a city..., ,images/background.png
+00.00,00.00,Select a city, ,images/background.png
 52.367,4.904,Amsterdam,Netherlands,images/cities/Amsterdam.jpeg
 39.933,32.859,Ankara,Turkey,images/cities/Ankara.jpg
 56.134,12.945,Åstorp,Sweden,images/cities/Astorp.jpg

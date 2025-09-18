@@ -99,7 +99,9 @@ select option {
 }
 
 .weather-description {
-    font-size: 1em;
+    height: 4.5vh;
+    margin-top: 3%;
+    font-size: 1.3em;
     color: #0d47a1;
 }
 
@@ -123,6 +125,13 @@ footer {
     color: white;
     margin-right:auto;
     background-color: #0d47a1;
+}
+
+.weather-description-label, .temperature-label {
+    font-size: 1.3em;
+    color: #0d47a1;
+    margin-top: 8px;
+    font-weight: bold;
 }
 
 
@@ -166,10 +175,6 @@ footer {
         font-size: 1.2em;
     }
 
-    .weather-description {
-        font-weight: bold;
-        font-size: 1.25em;
-    }
 
     .weather-icon img {
         width: 30vw;
@@ -237,11 +242,6 @@ footer {
         width: 90%;
         text-wrap: wrap;
         font-size: 1.2em;
-    }
-
-    .weather-description {
-        font-weight: bold;
-        font-size: 1.25em;
     }
 
     .weather-icon img {

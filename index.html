@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Weather Forecast Europe</h1>
+    <h1 id="weather-title">Weather Forecast Europe</h1>
     <div id="weather-city-selection">
         <select id="city-select">
             <option>Loading cities...</option>
@@ -17,6 +17,7 @@
     <div id="weather-forecast">
         <div id="forecast-container">
             <!-- Forecast data will be rendered here by JS -->
+            <h3 id="loading" style="padding-left: 47%; color: black;">Loading...</h3>
         </div>
     </div>
     <script src="js/populate_cities.js"></script>

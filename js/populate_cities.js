@@ -16,8 +16,9 @@ fetch('city_coordinates.csv')
         const longitude = parts[1].trim();
         const city = parts[2].trim();
         const country = parts[3].trim();
+        const image = parts[4].trim();
         if (city) {
-          citiesData.push({ index: idx, city, country, latitude, longitude });
+          citiesData.push({ index: idx, city, country, latitude, longitude, image });
           const option = document.createElement('option');
           option.value = idx; // use index for selection
           option.textContent = `${city}, ${country}`;

@@ -13,12 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
 								fetch(dataLocation)
 									.then(response => response.json())
 									.then(data => {
+										// Handle the API response
 										if (data && Array.isArray(data.dataseries)) {
 												// Clear previous forecast
                                                 console.log(data);
 												const forecastContainer = document.getElementById('forecast-container');
 												if (!forecastContainer) return;
-												forecastContainer.innerHTML = '';
+													forecastContainer.innerHTML = '';
 												data.dataseries.slice(0, 7).forEach(item => {
 														// Format date from YYYYMMDD to readable format
 														const rawDate = item.date.toString();
@@ -70,6 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
 																<div class="temperature">Temperature: ${item.temp2m.min} / ${item.temp2m.max} °C</div>
 																<div class="wind-speed">Wind: ${item.wind10m_max} m/s</div>
 														`;
+
+														let background = document.body;
+														background.style.backgroundImage = `url(${cityData.image})`;
 														forecastContainer.appendChild(card);
 												});
 										}

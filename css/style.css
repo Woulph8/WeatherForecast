@@ -225,6 +225,7 @@ footer {
     }
     .forecast-card {
         flex: 0 0 40%;
+        flex-direction: column;
         min-width: 40%;
         max-width: 40%;
         min-height: 50%;
@@ -269,5 +270,11 @@ footer {
         color: white;
         margin-right:auto;
         background-color: #0d47a1;
+    }
+    .weather-description-label, .temperature-label {
+    font-size: 1em;
+    color: #0d47a1;
+    margin-top: 8px;
+    font-weight: bold;
     }
 }

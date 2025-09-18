@@ -136,7 +136,7 @@ footer {
 
 
 /* Responsive styles for tablet */
-@media (max-width: 900px) {
+@media (max-width: 913px) {
     body{
         background-size: 1300px 950px;
     }

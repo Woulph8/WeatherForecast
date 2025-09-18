@@ -67,8 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                 <div class="weather-icon">
                                                                     <img src="images/${item.weather}.png" alt="${item.weather}" />
                                                                 </div>
-																<div class="weather-description">Weather ${weatherDescription}</div>
-																<div class="temperature">Temperature ${item.temp2m.min} / ${item.temp2m.max} °C</div>
+																<div class="weather-description-label">Weather</div>
+																<div class="weather-description">${weatherDescription}</div>
+																<div class="temperature-label">Temperature</div>
+																<div class="temperature">${item.temp2m.min} / ${item.temp2m.max} °C</div>
 																<div class="wind-speed">Wind: ${item.wind10m_max} m/s</div>
 														`;
 
